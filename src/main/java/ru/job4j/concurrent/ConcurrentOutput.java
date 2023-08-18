@@ -5,7 +5,20 @@ public class ConcurrentOutput {
         Thread another = new Thread(
                 () -> System.out.println(Thread.currentThread().getName())
         );
+//        Thread another = new Thread(
+//                new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        System.out.println(Thread.currentThread().getName());
+//                    }
+//                }
+//        );
+        Thread second = new Thread(
+                () -> System.out.println(Thread.currentThread().getName())
+        );
         another.start();
+//        another.run();
+        second.start();
         System.out.println(Thread.currentThread().getName());
     }
 }
