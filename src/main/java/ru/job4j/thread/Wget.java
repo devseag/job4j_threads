@@ -50,3 +50,5 @@ public class Wget implements Runnable {
         wget.join();
     }
 }
+
+//https://raw.githubusercontent.com/peterarsentev/course_test/master/pom.xml 1000
